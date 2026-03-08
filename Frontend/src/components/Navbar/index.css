@@ -1,0 +1,88 @@
+
+.navbar {
+  width: 100%;
+  background-color: #05030b;
+  border-bottom: 1px solid #cfcac2;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* NAV LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  opacity: 0.6;
+}
+
+/* RIGHT SECTION */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.login,
+.language {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login:hover,
+.language:hover {
+  opacity: 0.6;
+}
+
+/* BUTTON */
+.learn-btn {
+  background-color: #15736e;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.learn-btn:hover {
+  background-color: #125e59;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar-container {
+    padding: 15px 20px;
+  }
+}

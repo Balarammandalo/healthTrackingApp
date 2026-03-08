@@ -1,0 +1,50 @@
+.home {
+  background: #1e6ad6;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+.stars {
+  font-size: 28px;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.home-quote {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.home-author {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.dots {
+  margin-top: 30px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background: #bbb;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: white;
+}

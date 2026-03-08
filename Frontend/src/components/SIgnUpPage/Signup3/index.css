@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  background-color: #1e1e1e;
+}
+
+/* Container */
+.signup3-container {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  min-height: 100vh;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+/* Header */
+.signup3-container h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* Goal Buttons */
+.signup3-container button {
+  transition: 0.2s ease;
+}
+
+.signup3-container button:hover {
+  transform: scale(1.02);
+}
+
+/* Goal Section */
+.signup3-container button:nth-child(2),
+.signup3-container button:nth-child(3),
+.signup3-container button:nth-child(4) {
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background: #111;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Active style */
+.signup3-container button:nth-child(2):focus,
+.signup3-container button:nth-child(3):focus,
+.signup3-container button:nth-child(4):focus {
+  border: 2px solid #2bee7c;
+  background: #0f1f15;
+}
+
+/* Input */
+.signup3-container input {
+  width: 100%;
+  height: 52px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  outline: none;
+}
+
+.signup3-container input:focus {
+  border-color: #2bee7c;
+  box-shadow: 0 0 0 2px rgba(43, 238, 124, 0.2);
+}
+
+/* Select */
+.signup3-container select {
+  width: 100%;
+  height: 52px;
+  padding: 0 12px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  outline: none;
+}
+
+.signup3-container select:focus {
+  border-color: #2bee7c;
+}
+
+/* Complete Button */
+.signup3-container button:last-child {
+  margin-top: 30px;
+  height: 55px;
+  border-radius: 12px;
+  border: none;
+  background: #2bee7c;
+  color: #111;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.signup3-container button:last-child:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .signup3-container {
+    padding: 24px 16px;
+  }
+}

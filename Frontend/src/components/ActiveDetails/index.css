@@ -1,0 +1,185 @@
+/* Activity Page */
+
+.activity-page{
+  max-width:900px;
+  margin:auto;
+  padding:25px;
+  font-family:"Manrope",sans-serif;
+}
+
+
+/* Time Selector */
+
+.time-selector{
+  display:flex;
+  background:#eaf9f1;
+  border-radius:14px;
+  margin-bottom:25px;
+}
+
+.time-selector button{
+  flex:1;
+  padding:12px;
+  border:none;
+  background:none;
+  font-size:15px;
+  cursor:pointer;
+  border-radius:12px;
+}
+
+.time-selector .active{
+  background:#ffffff;
+  color:#20df6c;
+  font-weight:600;
+  box-shadow:0 3px 10px rgba(0,0,0,0.05);
+}
+
+
+/* Stats Card */
+
+.stats-card{
+  background:#ffffff;
+  padding:25px;
+  border-radius:18px;
+  margin-bottom:30px;
+  box-shadow:0 4px 18px rgba(0,0,0,0.05);
+}
+
+.label{
+  color:#888;
+  font-size:14px;
+  margin-bottom:5px;
+}
+
+.calories{
+  display:flex;
+  align-items:end;
+  color: #20df6c;
+  gap:8px;
+}
+
+.calories h1{
+  margin:0;
+  font-size:40px;
+  font-weight:700;
+}
+
+.calories span{
+  font-size:16px;
+  color:#777;
+}
+
+.trend{
+  margin-top:5px;
+  color:#20df6c;
+  font-size:14px;
+  font-weight:600;
+}
+
+
+/* Chart */
+
+.chart{
+  display:flex;
+  align-items:flex-end;
+  gap:12px;
+  height:110px;
+  margin-top:130px;
+}
+
+.bar{
+  flex:1;
+  background:#20df6c;
+  border-radius:8px 8px 0 0;
+  position:relative;
+}
+
+.bar span{
+  position:absolute;
+  bottom:-20px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:12px;
+  color:#666;
+}
+
+
+/* Activities */
+
+.activities{
+  margin-top:10px;
+}
+
+.activities-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.activities-header h3{
+  margin:0;
+  font-size:20px;
+}
+
+.activities-header button{
+  background:none;
+  border:none;
+  color:#20df6c;
+  cursor:pointer;
+  font-size:14px;
+}
+
+
+/* Activity Item */
+
+.activity-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  background:#ffffff;
+  padding:15px;
+   color: #20df6c;
+  border-radius:16px;
+  margin-bottom:12px;
+  box-shadow:0 3px 12px rgba(0,0,0,0.04);
+}
+
+.icon{
+  width:42px;
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  font-size:18px;
+}
+
+.green{
+  background:#e6fff1;
+}
+
+.blue{
+  background:#e6f3ff;
+}
+
+.orange{
+  background:#fff3e6;
+}
+
+.activity-info h4{
+  margin:0;
+  font-size:16px;
+}
+
+.activity-info p{
+  margin:3px 0 0;
+  font-size:13px;
+  color:#777;
+}
+
+.time{
+  margin-left:auto;
+  font-size:12px;
+  color:#999;
+}

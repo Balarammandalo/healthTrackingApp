@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+.Login_page{
+  padding: 20px 120px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+}
+.hero-section {
+  flex: 1;
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCf3AxRcQMhyAZLeWdzZgV5eRlf_00fK0oMKRY23J2v6KS3Y5fYOjMtyoMHbcb2z9XfbDjEbYLlpqhaeCVryGN-qpLcgBZK1GhcLJelGSIPshaQpsWjEViMffREMohdEhIH7N1iJ0wQ08MzymHQzbGi5xcK0q-l4X6c1BuIwL4ax0r41bpMYkrJv7PM0_RB2bzcTSZq2fB-3C9PeV5bvxBiO51E3WA5QdeQkBJdepdzrxBkAcW6zqi2Bx9_i4w_G5MZq1TCImvSeka");
+  background-size: cover;
+  background-position: center;
+  margin: 80px 220px 0px 0px;
+  position: relative;
+  display: flex;
+  height: 60vh;
+  width: 10vw;
+  align-items: flex-end;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.logo-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2bee7c, #16c95f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 26px;
+}
+
+.logo-text {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+.form-section-wrapper {
+  flex: 1;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* glass card effect */
+.form-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* =========================
+   TEXT STYLING
+========================= */
+
+.welcome-section h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  color: #9ca3af;
+  margin-bottom: 35px;
+}
+
+/* =========================
+   FORM STYLING
+========================= */
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label p {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 52px;
+  border-radius: 12px;
+  border: 1px solid #222;
+  background-color: #121212;
+  color: white;
+  padding: 0 45px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  border-color: #2bee7c;
+  box-shadow: 0 0 0 3px rgba(43, 238, 124, 0.2);
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  cursor: pointer;
+}
+
+/* Forgot password */
+
+.forgot-password {
+  text-align: right;
+}
+
+.forgot-password button {
+  background: none;
+  border: none;
+  color: #2bee7c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.forgot-password button:hover {
+  opacity: 0.7;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+  margin-top: 10px;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2bee7c, #16c95f);
+  color: black;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(43, 238, 124, 0.3);
+}
+
+/* Divider */
+
+.divider {
+  text-align: center;
+  margin: 25px 0;
+  color: #666;
+  font-size: 13px;
+}
+
+/* Social buttons */
+
+.social-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.social-btn {
+  flex: 1;
+  height: 45px;
+  border-radius: 10px;
+  border: 1px solid #222;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #1a1a1a;
+}
+
+/* Signup */
+
+.signup-section {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.signup-btn {
+  margin-left: 6px;
+  background: none;
+  border: none;
+  color: #2bee7c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .hero-section {
+    height: 300px;
+  }
+
+  .form-section-wrapper {
+    padding: 30px;
+  }
+}
