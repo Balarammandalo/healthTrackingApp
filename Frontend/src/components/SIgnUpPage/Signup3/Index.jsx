@@ -11,6 +11,8 @@ const Index = () => {
   const [goalType, setGoalType] = useState("Weight Loss");
   const [targetWeight, setTargetWeight] = useState("");
   const [duration, setDuration] = useState(3);
+  
+  const Api = import.meta.env.VITE_API_URL || "http://localhost:5000/user";
  
   const handleSubmit = async () => {
   if (!targetWeight) {
@@ -31,7 +33,7 @@ const Index = () => {
 
   try {
     const response = await fetch(
-      "http://localhost:5000/user/register",
+      `${Api}/register`,
       {
         method: "POST",
         headers: {

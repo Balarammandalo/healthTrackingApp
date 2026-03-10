@@ -12,6 +12,8 @@ const Index = () => {
     weeks: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"],
     calories: []
   });
+  
+  const Api = import.meta.env.VITE_API_URL || "http://localhost:5000/user";
   const pieData = [
     { id: 0, value: 30, label: "ABS" },
     { id: 1, value: 20, label: "Back" },
@@ -21,7 +23,7 @@ const Index = () => {
   const fetchActivity = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/user/activity/week"
+        `${Api}/activity/week`
       );
       const data = await response.json();
       setBmi(data.bmi);

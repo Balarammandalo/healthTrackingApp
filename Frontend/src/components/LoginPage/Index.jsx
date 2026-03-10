@@ -5,6 +5,8 @@ import Cookies from "js-cookie";
 
 const Index = () => {
   const navigate = useNavigate();
+  
+  const Api = import.meta.env.VITE_API_URL || "http://localhost:5000/user";
 
   const [formData, setFormData] = useState({
     email: "",
@@ -31,7 +33,8 @@ const Index = () => {
 
     try {
 
-      const response = await fetch("http://localhost:5000/user/login", {
+      const response = await fetch(`${Api}/login`,
+        {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

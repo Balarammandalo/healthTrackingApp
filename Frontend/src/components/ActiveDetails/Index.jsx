@@ -6,10 +6,12 @@ const Index = () => {
   const [selected, setSelected] = useState("Week");
   const [chartData, setChartData] = useState([]);
   const [totalCalories, setTotalCalories] = useState(0);
+  const Api = import.meta.env.VITE_API_URL || "http://localhost:5000/user";
+
   const fetchActivity = async (range) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/user/activity/${range.toLowerCase()}`
+        `${Api}/activity/${range.toLowerCase()}`
       );
       const data = await response.json();
       const activityData = data.activity || [];
