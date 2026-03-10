@@ -1,8 +1,8 @@
 import "./index.css"
 
-import phone1 from "../../images/Mobile1.png";
-import phone2 from "../../images/Mobile2.png";
-import phone3 from "../../images/Mobile3.png";
+import phone1 from "../../images/Mobile1.png"
+import phone2 from "../../images/Mobile2.png"
+import phone3 from "../../images/Mobile3.png"
 
 const Index = () => {
   return (
